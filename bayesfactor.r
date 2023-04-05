@@ -17,7 +17,7 @@ df$mlikelihood = dbinom(x = postest,size = tests, prob = sensitivity) * df$prior
 df$posterior = (df$likelihood * df$prior)/df$mlikelihood
 
 #this one seems to work better? 
-#prior = people with rona
+#prior = people with COVID
 prior = 1/200000
 
 sensitivity = 0.97
